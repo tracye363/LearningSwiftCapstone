@@ -11,6 +11,10 @@
 		E32302FC2826CC5F00BC2739 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32302FB2826CC5F00BC2739 /* ContentView.swift */; };
 		E32302FE2826CC6900BC2739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32302FD2826CC6900BC2739 /* Assets.xcassets */; };
 		E32303012826CC6900BC2739 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32303002826CC6900BC2739 /* Preview Assets.xcassets */; };
+		E3230308282C345500BC2739 /* TeacherContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3230307282C345400BC2739 /* TeacherContactView.swift */; };
+		E323030A282C359E00BC2739 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3230309282C359E00BC2739 /* CalendarView.swift */; };
+		E323030C282C35D700BC2739 /* GradeCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E323030B282C35D700BC2739 /* GradeCalculatorView.swift */; };
+		E323030E282C360500BC2739 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E323030D282C360500BC2739 /* ResourcesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		E32302FB2826CC5F00BC2739 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E32302FD2826CC6900BC2739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32303002826CC6900BC2739 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E3230307282C345400BC2739 /* TeacherContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherContactView.swift; sourceTree = "<group>"; };
+		E3230309282C359E00BC2739 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		E323030B282C35D700BC2739 /* GradeCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCalculatorView.swift; sourceTree = "<group>"; };
+		E323030D282C360500BC2739 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				E32302F92826CC5F00BC2739 /* LearningSwiftCapstoneApp.swift */,
 				E32302FB2826CC5F00BC2739 /* ContentView.swift */,
+				E323030D282C360500BC2739 /* ResourcesView.swift */,
+				E323030B282C35D700BC2739 /* GradeCalculatorView.swift */,
+				E3230309282C359E00BC2739 /* CalendarView.swift */,
+				E3230307282C345400BC2739 /* TeacherContactView.swift */,
 				E32302FD2826CC6900BC2739 /* Assets.xcassets */,
 				E32302FF2826CC6900BC2739 /* Preview Content */,
 			);
@@ -137,7 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E323030E282C360500BC2739 /* ResourcesView.swift in Sources */,
 				E32302FC2826CC5F00BC2739 /* ContentView.swift in Sources */,
+				E323030C282C35D700BC2739 /* GradeCalculatorView.swift in Sources */,
+				E3230308282C345500BC2739 /* TeacherContactView.swift in Sources */,
+				E323030A282C359E00BC2739 /* CalendarView.swift in Sources */,
 				E32302FA2826CC5F00BC2739 /* LearningSwiftCapstoneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
