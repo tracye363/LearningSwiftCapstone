@@ -28,7 +28,7 @@ struct ContentView: View {
                             .underline()}
                     
             
-                    NavigationLink(destination: GradeCalculatorView())
+                    NavigationLink(destination: GradeCalculatorView(abPoints: 0, apPoints: 0, aaPoints: 0, currentGrade: "E"))
                     { Text ("Grade Calculator")
                             .font(.system(size: 35.0))
                             .underline()}
