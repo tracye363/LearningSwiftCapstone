@@ -12,11 +12,15 @@ struct GradeCalculatorView: View {
     @State var apPoints: Double
     @State var aaPoints: Double
     @State var currentGrade: String
+    var gradeCategories = ["Academic Behavior", "Academic Performance", "Academic Achievemen"]
+    @State var selectedCat = "Academic Behavior"
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Grade Calculator")
-                .font(.largeTitle)
+        
+                Text("Grade Calculator")
+                    .font(.largeTitle)
+                .foregroundColor(Color.blue)
                 
             HStack {
                 Text("Categories")
@@ -50,7 +54,15 @@ struct GradeCalculatorView: View {
                 Text(currentGrade)
              
             }
+            Picker("Please choose a color", selection: $selectedCat) {
+                            ForEach(gradeCategories, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                        .pickerStyle(.wheel)
+                        Text("Enter points")
         }.padding()
+        
     }
     
 }
