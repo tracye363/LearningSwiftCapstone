@@ -9,7 +9,16 @@ import SwiftUI
 
 struct Resource_VariablesConstantsTypes_View: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            Text("Variables, Constants, Types")
+                .fontWeight(.bold)
+                .font(.system(size: 40.0))
+                .padding(.horizontal, 15.0)
+                .border(Color.blue, width: 4)
+                .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
+            Spacer()
+        }
     }
 }
 
