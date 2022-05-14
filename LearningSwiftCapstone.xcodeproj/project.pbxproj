@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9727956B283000D1005FECDA /* Resource_VariablesConstantsTypes_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727956A283000D1005FECDA /* Resource_VariablesConstantsTypes_View.swift */; };
+		9727956D28300145005FECDA /* Resource_OperatorsAndBoolean_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727956C28300145005FECDA /* Resource_OperatorsAndBoolean_View.swift */; };
+		9727956F283001AA005FECDA /* Resource_ControlFlow_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727956E283001AA005FECDA /* Resource_ControlFlow_View.swift */; };
+		97279571283001DE005FECDA /* Resource_Loops_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97279570283001DE005FECDA /* Resource_Loops_View.swift */; };
 		E32302FA2826CC5F00BC2739 /* LearningSwiftCapstoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32302F92826CC5F00BC2739 /* LearningSwiftCapstoneApp.swift */; };
 		E32302FC2826CC5F00BC2739 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32302FB2826CC5F00BC2739 /* ContentView.swift */; };
 		E32302FE2826CC6900BC2739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32302FD2826CC6900BC2739 /* Assets.xcassets */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9727956A283000D1005FECDA /* Resource_VariablesConstantsTypes_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource_VariablesConstantsTypes_View.swift; sourceTree = "<group>"; };
+		9727956C28300145005FECDA /* Resource_OperatorsAndBoolean_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource_OperatorsAndBoolean_View.swift; sourceTree = "<group>"; };
+		9727956E283001AA005FECDA /* Resource_ControlFlow_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource_ControlFlow_View.swift; sourceTree = "<group>"; };
+		97279570283001DE005FECDA /* Resource_Loops_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource_Loops_View.swift; sourceTree = "<group>"; };
 		E32302F62826CC5F00BC2739 /* LearningSwiftCapstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwiftCapstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32302F92826CC5F00BC2739 /* LearningSwiftCapstoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSwiftCapstoneApp.swift; sourceTree = "<group>"; };
 		E32302FB2826CC5F00BC2739 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +48,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97279569282FFFE6005FECDA /* Resource View */ = {
+			isa = PBXGroup;
+			children = (
+				9727956A283000D1005FECDA /* Resource_VariablesConstantsTypes_View.swift */,
+				9727956C28300145005FECDA /* Resource_OperatorsAndBoolean_View.swift */,
+				9727956E283001AA005FECDA /* Resource_ControlFlow_View.swift */,
+				97279570283001DE005FECDA /* Resource_Loops_View.swift */,
+			);
+			path = "Resource View";
+			sourceTree = "<group>";
+		};
 		E32302ED2826CC5F00BC2739 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +81,7 @@
 				E32302F92826CC5F00BC2739 /* LearningSwiftCapstoneApp.swift */,
 				E32302FB2826CC5F00BC2739 /* ContentView.swift */,
 				E323030D282C360500BC2739 /* ResourcesView.swift */,
+				97279569282FFFE6005FECDA /* Resource View */,
 				E323030B282C35D700BC2739 /* GradeCalculatorView.swift */,
 				E3230309282C359E00BC2739 /* CalendarView.swift */,
 				E3230307282C345400BC2739 /* TeacherContactView.swift */,
@@ -149,11 +169,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9727956D28300145005FECDA /* Resource_OperatorsAndBoolean_View.swift in Sources */,
+				9727956F283001AA005FECDA /* Resource_ControlFlow_View.swift in Sources */,
 				E323030E282C360500BC2739 /* ResourcesView.swift in Sources */,
 				E32302FC2826CC5F00BC2739 /* ContentView.swift in Sources */,
 				E323030C282C35D700BC2739 /* GradeCalculatorView.swift in Sources */,
+				9727956B283000D1005FECDA /* Resource_VariablesConstantsTypes_View.swift in Sources */,
 				E3230308282C345500BC2739 /* TeacherContactView.swift in Sources */,
 				E323030A282C359E00BC2739 /* CalendarView.swift in Sources */,
+				97279571283001DE005FECDA /* Resource_Loops_View.swift in Sources */,
 				E32302FA2826CC5F00BC2739 /* LearningSwiftCapstoneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
