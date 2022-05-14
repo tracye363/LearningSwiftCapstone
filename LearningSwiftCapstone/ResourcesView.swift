@@ -36,7 +36,7 @@ struct ResourcesView: View {
             { Text ("Loops")
                     .font(.system(size: 35.0))
                 .underline()}
-            
+            //Test
             NavigationLink(destination: Resource_VariablesConstantsTypes_View())
             { Text ("Functions")
                     .font(.system(size: 35.0))
