@@ -16,7 +16,7 @@ struct GradeCalculatorView: View {
     @State var newGrade: Double
     var gradeCategories = ["Behavior", "Performance", "Achievemen"]
     @State var selectedCat = "Academic Behavior"
-    
+    //test
     var body: some View {
         VStack(alignment: .leading) {
             Text("Grade Calculator")
