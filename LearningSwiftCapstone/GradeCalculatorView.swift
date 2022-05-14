@@ -20,8 +20,8 @@ struct GradeCalculatorView: View {
         
                 Text("Grade Calculator")
                     .font(.largeTitle)
-                .foregroundColor(Color.blue)
-                
+                    .foregroundColor(Color.blue)
+                Spacer()
             HStack {
                 Text("Categories")
                     .fontWeight(.bold)
@@ -54,14 +54,16 @@ struct GradeCalculatorView: View {
                 Text(currentGrade)
              
             }
-            Picker("Please choose a color", selection: $selectedCat) {
+        .padding()
+            Picker("Choose category for new score", selection: $selectedCat) {
                             ForEach(gradeCategories, id: \.self) {
                                 Text($0)
                             }
                         }
                         .pickerStyle(.wheel)
                         Text("Enter points")
-        }.padding()
+                .padding()
+        }
         
     }
     
