@@ -12,6 +12,8 @@ struct ResourcesView: View {
         VStack {
             Text("Resources")
             //NavigationView
+            // note
+            
         }
     }
 }
