@@ -16,7 +16,7 @@ struct ContentView: View {
                             .font(.system(size: 40.0))
                             .border(Color.blue, width: 4)
                             .padding(6)
-                    Spacer()
+                    
                     NavigationLink(destination: TeacherContactView())
                     { Text ("Teacher Contact")
                             .font(.system(size: 35.0))
@@ -26,20 +26,16 @@ struct ContentView: View {
                     { Text ("Calendar")
                             .font(.system(size: 35.0))
                             .underline()}
-                    
             
-                    NavigationLink(destination: GradeCalculatorView(abPoints: 0, apPoints: 0, aaPoints: 0, currentGrade: "E"))
+                    NavigationLink(destination: GradeCalculatorView(abPoints: 0, apPoints: 0, aaPoints: 0, newPoints: 0.0, currentGrade: 0.0, newGrade: 0.0))
                     { Text ("Grade Calculator")
                             .font(.system(size: 35.0))
                             .underline()}
-                 
-                       
                         
                     NavigationLink(destination: ResourcesView())
                     { Text ("Resources")
                         .font(.system(size: 35.0))
                         .underline()}
-                    
                 }
             
         }.navigationBarTitle("Learning Swift")

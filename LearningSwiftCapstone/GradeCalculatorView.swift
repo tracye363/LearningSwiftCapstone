@@ -11,47 +11,52 @@ struct GradeCalculatorView: View {
     @State var abPoints: Double
     @State var apPoints: Double
     @State var aaPoints: Double
-    @State var currentGrade: String
-    var gradeCategories = ["Academic Behavior", "Academic Performance", "Academic Achievemen"]
+    @State var newPoints: Double
+    @State var currentGrade: Double
+    @State var newGrade: Double
+    var gradeCategories = ["Behavior", "Performance", "Achievemen"]
     @State var selectedCat = "Academic Behavior"
     
     var body: some View {
         VStack(alignment: .leading) {
-        
-                Text("Grade Calculator")
-                    .font(.largeTitle)
-                    .foregroundColor(Color.blue)
-                Spacer()
+            Text("Grade Calculator")
+                .font(.largeTitle.bold())
+                .foregroundColor(Color.blue)
             HStack {
                 Text("Categories")
                     .fontWeight(.bold)
                 Spacer()
                 Text("Total Points")
                     .fontWeight(.bold)
-            }
+            } .padding(3)
             HStack {
                 Text("Academic Behavior")
                     .fontWeight(.bold)
-                Spacer()
-                Text("\(abPoints, specifier:"%.2f")")
-            }
+                
+                TextField("Enter your score", value: $abPoints, format: .number)
+                            .textFieldStyle(.roundedBorder)
+            }.padding(4)
             HStack {
                 Text("Academic Performance")
                     .fontWeight(.bold)
                 Spacer()
-                Text("\(apPoints, specifier:"%.2f")")
-            }
+                TextField("Enter your score", value: $apPoints, format: .number)
+                                .textFieldStyle(.roundedBorder)
+                                .padding()
+            }.padding(4)
             HStack {
                 Text("Academic Achievement")
                     .fontWeight(.bold)
                 Spacer()
-                Text("\(aaPoints, specifier:"%.2f")")
-            }
+                TextField("Enter your score", value: $aaPoints, format: .number)
+                                .textFieldStyle(.roundedBorder)
+                                .padding()
+            }.padding(4)
             HStack {
                 Text ("Current Grade")
                     .fontWeight(.bold)
                 Spacer()
-                Text(currentGrade)
+                Text("\(currentGrade)")
              
             }
         .padding()
@@ -60,9 +65,22 @@ struct GradeCalculatorView: View {
                                 Text($0)
                             }
                         }
-                        .pickerStyle(.wheel)
-                        Text("Enter points")
-                .padding()
+                        .pickerStyle(.segmented)
+                        .padding(4)
+            HStack {
+                Text("Enter Points")
+                    .fontWeight(.bold)
+                TextField("", value: $newPoints, format: .number)
+                    .textFieldStyle(.roundedBorder)
+                    .padding()
+
+            }.padding(4)
+            HStack {
+                Text("New Grade")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.red)
+                Text("\(newGrade)")
+            } .padding(4)
         }
         
     }
@@ -71,6 +89,6 @@ struct GradeCalculatorView: View {
 
 struct GradeCalculatorView_Previews: PreviewProvider {
     static var previews: some View {
-        GradeCalculatorView(abPoints: 0.0, apPoints: 0.0, aaPoints: 0.0, currentGrade: "0")
+        GradeCalculatorView(abPoints: 0.0, apPoints: 0.0, aaPoints: 0.0, newPoints: 0.0, currentGrade: 0.0, newGrade: 0.0)
     }
 }
