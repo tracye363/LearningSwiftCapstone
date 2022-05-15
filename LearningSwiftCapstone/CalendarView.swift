@@ -26,8 +26,16 @@ struct CalendarView: View {
                 )
                 .datePickerStyle(.graphical)
             VStack (alignment: .leading){
-                Text("Notes:")
-                    .fontWeight(.bold)
+                HStack {
+                    Text("Notes:")
+                        .fontWeight(.bold)
+                        .font(.system(size: 25.0))
+                    Spacer()
+                    Text("Save")
+                        .fontWeight(.bold)
+                        .font(.system(size: 25.0))
+                      
+                }
                 TextEditor(text: $fullText)
                     .border(Color.blue, width: 2)
             }
