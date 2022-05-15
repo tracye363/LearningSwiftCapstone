@@ -17,7 +17,7 @@ struct GradeCalculatorView: View {
     var gradeCategories = ["Behavior", "Performance", "Achievemen"]
     @State var selectedCat = "Academic Behavior"
     func calcCurrentGrade ()-> Double {
-        (currentGrade = (abPoints * 0.2) + (apPoints * 0.3) + (aaPoints * 0.5))
+        (currentGrade = ((abPoints * 0.2) + (apPoints * 0.3) + (aaPoints * 0.5)))
         return currentGrade
     }
     func calcNewGrade ()-> Double {
@@ -28,9 +28,11 @@ struct GradeCalculatorView: View {
     }
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Grade Calculator")
-                .font(.largeTitle.bold())
-                .foregroundColor(Color.blue)
+            Text("   Grade Calculator ")
+                .fontWeight(.bold)
+                .font(.system(size: 40.0))
+                .border(Color.blue, width: 4)
+                .padding()
             HStack {
                 Text("Categories")
                     .fontWeight(.bold)
@@ -70,7 +72,7 @@ struct GradeCalculatorView: View {
                 }
 
                 Spacer()
-                Text("\(currentGrade)")
+                Text("\(currentGrade, specifier:"%.2f")%")
              
             }
         .padding()
@@ -97,9 +99,9 @@ struct GradeCalculatorView: View {
                         .fontWeight(.bold)
                         .foregroundColor(Color.red)
                 }
-                Text("\(newGrade)")
+                Text("\(newGrade, specifier:"%.2f")%")
             } .padding(4)
-        }
+        }.padding()
         
     }
     

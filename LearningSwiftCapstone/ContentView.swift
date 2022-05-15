@@ -15,7 +15,7 @@ struct ContentView: View {
                             .fontWeight(.bold)
                             .font(.system(size: 40.0))
                             .border(Color.blue, width: 4)
-                            .padding(6)
+                            .padding()
                     
                     NavigationLink(destination: TeacherContactView())
                     { Text ("Teacher Contact")
