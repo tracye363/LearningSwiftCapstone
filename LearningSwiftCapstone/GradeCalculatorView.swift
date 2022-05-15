@@ -28,11 +28,11 @@ struct GradeCalculatorView: View {
     }
     var body: some View {
         VStack(alignment: .leading) {
-            Text("   Grade Calculator ")
+            Text("   Grade Calculator   ")
                 .fontWeight(.bold)
-                .font(.system(size: 40.0))
-                .border(Color.blue, width: 4)
-                .padding()
+                .font(.system(size: 35.0))
+                .border(Color.blue, width: 5)
+                
             HStack {
                 Text("Categories")
                     .fontWeight(.bold)

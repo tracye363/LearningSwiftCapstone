@@ -7,11 +7,31 @@
 
 import SwiftUI
 
+
+
 struct CalendarView: View {
+    @State private var date = Date()
+    @State private var fullText: String = "This is editable text..."
     var body: some View {
-        Text("Calendar")
-            .font(.largeTitle)
-    
+        VStack {
+            Text("   Calendar   ")
+                .fontWeight(.bold)
+                .font(.system(size: 35.0))
+                .border(Color.blue, width: 5)
+            
+            DatePicker(
+                    "Start Date",
+                    selection: $date,
+                    displayedComponents: [.date]
+                )
+                .datePickerStyle(.graphical)
+            VStack (alignment: .leading){
+                Text("Notes:")
+                    .fontWeight(.bold)
+                TextEditor(text: $fullText)
+                    .border(Color.blue, width: 2)
+            }
+        }.padding()
     }
 }
 
