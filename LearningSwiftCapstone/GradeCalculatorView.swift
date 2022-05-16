@@ -33,7 +33,7 @@ struct GradeCalculatorView: View {
                 .fontWeight(.bold)
                 .font(.system(size: 35.0))
                 .padding()
-                .border(Color.blue, width: 5)
+                .border(Color.blue, width: 4)
                 
             HStack {
                 Text("Categories")

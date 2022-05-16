@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct NotesView: View {
+    
+    @Binding var notes: String
+    
     var body: some View {
         VStack {
             Text("   Notes   ")
                 .fontWeight(.bold)
                 .font(.system(size: 35.0))
                 .padding()
-            .border(Color.blue, width: 5)
+                .border(Color.blue, width: 4)
             Spacer()
+            VStack(alignment: .leading) {
+                Text("\(notes)")
+            }
         }
 
     }
@@ -23,6 +29,6 @@ struct NotesView: View {
 
 struct NotesView_Previews: PreviewProvider {
     static var previews: some View {
-        NotesView()
+        NotesView(notes: .constant("Note1"))
     }
 }
