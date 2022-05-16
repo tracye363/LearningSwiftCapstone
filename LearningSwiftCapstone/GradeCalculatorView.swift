@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GradeCalculatorView: View {
+    
     @State var abPoints: Double
     @State var apPoints: Double
     @State var aaPoints: Double
@@ -104,7 +105,6 @@ struct GradeCalculatorView: View {
         }.padding()
         
     }
-    
 }
 
 struct GradeCalculatorView_Previews: PreviewProvider {

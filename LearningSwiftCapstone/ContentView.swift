@@ -38,11 +38,11 @@ struct ContentView: View {
                         .underline()}
                 }
             
-        }.navigationBarTitle("Learning Swift")
+        }
 
     }
     
-    
+
 }
 
 
