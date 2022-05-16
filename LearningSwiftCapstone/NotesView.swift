@@ -18,9 +18,12 @@ struct NotesView: View {
                 .font(.system(size: 35.0))
                 .padding()
                 .border(Color.blue, width: 4)
-            Spacer()
+        
             VStack(alignment: .leading) {
-                Text("\(notes)")
+                List{
+                    Text("\(notes)")
+                }
+                    Spacer()
             }
         }
 
