@@ -29,22 +29,25 @@ struct GradeCalculatorView: View {
     }
     var body: some View {
         VStack(alignment: .leading) {
-            Text("   Grade Calculator   ")
+            Text(" Grade Calculator")
                 .fontWeight(.bold)
                 .font(.system(size: 35.0))
+                .padding()
                 .border(Color.blue, width: 5)
                 
             HStack {
                 Text("Categories")
+                    .font(.system(size: 25.0))
                     .fontWeight(.bold)
                 Spacer()
                 Text("Total Points")
+                    .font(.system(size: 25.0))
                     .fontWeight(.bold)
             } .padding(3)
             HStack {
                 Text("Academic Behavior")
                     .fontWeight(.bold)
-                
+                Spacer()
                 TextField("Enter your score", value: $abPoints, format: .number)
                             .textFieldStyle(.roundedBorder)
             }.padding(4)
@@ -63,17 +66,20 @@ struct GradeCalculatorView: View {
                 TextField("Enter your score", value: $aaPoints, format: .number)
                                 .textFieldStyle(.roundedBorder)
                                 .padding()
+                
             }.padding(4)
             HStack {
                 Button  {
                     calcCurrentGrade()
                 } label: {
                     Text ("Current Grade")
+                        .font(.system(size: 25.0))
                         .fontWeight(.bold)
                 }
 
                 Spacer()
                 Text("\(currentGrade, specifier:"%.2f")%")
+                    .font(.system(size: 25.0))
              
             }
         .padding()
@@ -87,6 +93,7 @@ struct GradeCalculatorView: View {
             HStack {
                 Text("Enter Points")
                     .fontWeight(.bold)
+                Spacer()
                 TextField("", value: $newPoints, format: .number)
                     .textFieldStyle(.roundedBorder)
                     .padding()
@@ -99,9 +106,13 @@ struct GradeCalculatorView: View {
                     Text("New Grade")
                         .fontWeight(.bold)
                         .foregroundColor(Color.red)
+                        .font(.system(size: 25.0))
                 }
+                Spacer()
                 Text("\(newGrade, specifier:"%.2f")%")
+                    .font(.system(size: 25.0))
             } .padding(4)
+            Spacer()
         }.padding()
         
     }

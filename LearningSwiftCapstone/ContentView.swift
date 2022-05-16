@@ -11,12 +11,17 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
                 VStack (alignment: .center){
-                        Text(" Learning Swift ")
+                        Text("  Learning Swift  ")
                             .fontWeight(.bold)
                             .font(.system(size: 40.0))
+                            .padding()
                             .border(Color.blue, width: 4)
                             .padding()
-                    
+                    Image ("swiftImage")
+                        .resizable()
+                        .scaledToFit()
+                    .padding()
+                    .padding()
                     NavigationLink(destination: TeacherContactView())
                     { Text ("Teacher Contact")
                             .font(.system(size: 35.0))
@@ -36,13 +41,10 @@ struct ContentView: View {
                     { Text ("Resources")
                         .font(.system(size: 35.0))
                         .underline()}
+                    Spacer()
                 }
-            
         }
-
     }
-    
-
 }
 
 

@@ -22,6 +22,7 @@
 		E323030A282C359E00BC2739 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3230309282C359E00BC2739 /* CalendarView.swift */; };
 		E323030C282C35D700BC2739 /* GradeCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E323030B282C35D700BC2739 /* GradeCalculatorView.swift */; };
 		E323030E282C360500BC2739 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E323030D282C360500BC2739 /* ResourcesView.swift */; };
+		E35F293C2832C5E0008B5F80 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35F293B2832C5E0008B5F80 /* NotesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		E3230309282C359E00BC2739 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		E323030B282C35D700BC2739 /* GradeCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCalculatorView.swift; sourceTree = "<group>"; };
 		E323030D282C360500BC2739 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
+		E35F293B2832C5E0008B5F80 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				97279569282FFFE6005FECDA /* Resource View */,
 				E323030B282C35D700BC2739 /* GradeCalculatorView.swift */,
 				E3230309282C359E00BC2739 /* CalendarView.swift */,
+				E35F293B2832C5E0008B5F80 /* NotesView.swift */,
 				E3230307282C345400BC2739 /* TeacherContactView.swift */,
 				E32302FD2826CC6900BC2739 /* Assets.xcassets */,
 				E32302FF2826CC6900BC2739 /* Preview Content */,
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35F293C2832C5E0008B5F80 /* NotesView.swift in Sources */,
 				970FAB4328300A7300B1C7A7 /* Resource_Arrays_View.swift in Sources */,
 				9727956D28300145005FECDA /* Resource_OperatorsAndBoolean_View.swift in Sources */,
 				9727956F283001AA005FECDA /* Resource_ControlFlow_View.swift in Sources */,
