@@ -12,7 +12,7 @@ struct ContentView: View {
         NavigationView {
             ZStack {
                 Rectangle()
-                    Color.mint
+                Color.mint
                     .ignoresSafeArea()
                 
                 VStack (alignment: .center){
