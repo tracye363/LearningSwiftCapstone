@@ -37,95 +37,103 @@ struct GradeViewNew: View {
 
 
     var body: some View {
-        VStack {
-            HStack {
-                Text("Categories")
-                    .font(.system(size: 15.0))
-                    .fontWeight(.bold)
-                    .underline()
-                Spacer()
-                Text("Earned Points")
-                    .font(.system(size: 15.0))
-                    .fontWeight(.bold)
-                    .underline()
-                Spacer()
-                Text("Possible Points")
-                    .font(.system(size: 15.0))
-                    .fontWeight(.bold)
-                    .underline()
-            }
-            HStack {
-                Text("Behavior")
-                Spacer()
-                TextField("Points", value: $abPoints, format: .number)
-                    .textFieldStyle(.roundedBorder)
-                Spacer()
-                TextField("Points", value: $abTotalPoints, format: .number)
-                    .textFieldStyle(.roundedBorder)
-            }
-            HStack {
-                Text("Performance")
-                Spacer()
-                TextField("Points", value: $apPoints, format: .number)
-                    .textFieldStyle(.roundedBorder)
-                Spacer()
-                TextField("Points", value: $apTotalPoints, format: .number)
-                    .textFieldStyle(.roundedBorder)
-            }
-            HStack {
-                Text("Achievement")
-                Spacer()
-                TextField("Points", value: $aaPoints, format: .number)
-                    .textFieldStyle(.roundedBorder)
-                Spacer()
-                TextField("Points", value: $aaTotalPoints, format: .number)
-                    .textFieldStyle(.roundedBorder)
-            }
-            HStack {
-                Button  {
-                    calcCurrentGrade()
-                    } label: {
-                    Text ("Current Grade")
-                        .font(.system(size: 25.0))
+        ZStack {
+            Rectangle()
+                Color.mint
+                .ignoresSafeArea()
+            VStack {
+                HStack {
+                    Text("Categories")
+                        .font(.system(size: 15.0))
                         .fontWeight(.bold)
-                    }
+                        .underline()
                     Spacer()
-                    Text("\(currentGrade, specifier:"%.2f")%")
-                        .font(.system(size: 25.0))
-                           
-                       }
-            Picker("Choose category for new score", selection: $selectedCat) {
-                ForEach(gradeCategories, id: \.self) { Text($0)
+                    Text("Earned Points")
+                        .font(.system(size: 15.0))
+                        .fontWeight(.bold)
+                        .underline()
+                    Spacer()
+                    Text("Possible Points")
+                        .font(.system(size: 15.0))
+                        .fontWeight(.bold)
+                        .underline()
                 }
-                    }
-                .pickerStyle(.segmented)
-            HStack {
-                Text("Enter Points")
-                    .fontWeight(.bold)
-                Spacer()
-                TextField("", value: $newPoints, format: .number)
-                    .textFieldStyle(.roundedBorder)
-                Spacer()
-                TextField("", value: $newTotalPoints, format: .number)
-                    .textFieldStyle(.roundedBorder)
+                HStack {
+                    Text("Behavior")
+                    Spacer()
+                    TextField("Points", value: $abPoints, format: .number)
+                        .textFieldStyle(.roundedBorder)
+                    Spacer()
+                    TextField("Points", value: $abTotalPoints, format: .number)
+                        .textFieldStyle(.roundedBorder)
                 }
-            HStack {
-                Button {
-                    calcNewGrade()
-                    } label: {
-                        Text("New Grade")
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.red)
+                HStack {
+                    Text("Performance")
+                    Spacer()
+                    TextField("Points", value: $apPoints, format: .number)
+                        .textFieldStyle(.roundedBorder)
+                    Spacer()
+                    TextField("Points", value: $apTotalPoints, format: .number)
+                        .textFieldStyle(.roundedBorder)
+                }
+                HStack {
+                    Text("Achievement")
+                    Spacer()
+                    TextField("Points", value: $aaPoints, format: .number)
+                        .textFieldStyle(.roundedBorder)
+                    Spacer()
+                    TextField("Points", value: $aaTotalPoints, format: .number)
+                        .textFieldStyle(.roundedBorder)
+                }
+                HStack {
+                    Button  {
+                        calcCurrentGrade()
+                        } label: {
+                        Text ("Current Grade")
                             .font(.system(size: 25.0))
+                            .fontWeight(.bold)
+                        }
+                        Spacer()
+                        Text("\(currentGrade, specifier:"%.2f")%")
+                            .font(.system(size: 25.0))
+                               
+                           }
+                Spacer()
+                
+                Picker("Choose category for new score", selection: $selectedCat) {
+                    ForEach(gradeCategories, id: \.self) { Text($0)
+                    }
+                        }
+                    .pickerStyle(.segmented)
+                HStack {
+                    Text("Enter Points")
+                        .fontWeight(.bold)
+                    Spacer()
+                    TextField("", value: $newPoints, format: .number)
+                        .textFieldStyle(.roundedBorder)
+                    Spacer()
+                    TextField("", value: $newTotalPoints, format: .number)
+                        .textFieldStyle(.roundedBorder)
+                    }
+                HStack {
+                    Button {
+                        calcNewGrade()
+                        } label: {
+                            Text("New Grade")
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.red)
+                                .font(.system(size: 25.0))
+                        }
+                    Spacer()
+                    Text("\(newGrade, specifier:"%.2f")%")
+                        .font(.system(size: 25.0))
                     }
                 Spacer()
-                Text("\(newGrade, specifier:"%.2f")%")
-                    .font(.system(size: 25.0))
-                }
-
-
-        }.padding()
+                    .navigationBarTitle("Grade Calculator")
+            }.padding()
+        }
     }
+       
 }
 
 struct GradeViewNew_Previews: PreviewProvider {
