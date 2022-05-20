@@ -51,7 +51,7 @@ struct ContentView: View {
                         }
                         Spacer()
                     }
-                .navigationTitle("Learing Swift")
+                .navigationTitle("Learning Swift")
             }
         }
     }
