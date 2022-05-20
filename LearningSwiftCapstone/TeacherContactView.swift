@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TeacherContactView: View {
     var body: some View {
-        Text("Teacher Contact")
+        Text("Teacher Contact") 
     }
 }
 
