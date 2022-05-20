@@ -40,7 +40,8 @@ struct ResourcesView: View {
                         .font(.system(size: 25.0))}
                 } header: {
                     Text("Swift")
-                }
+                }.listRowBackground(Rectangle().foregroundColor(.pink))
+                
                 
                 Section {
                     NavigationLink(destination: Resource_VariablesConstantsTypes_View())
@@ -64,9 +65,14 @@ struct ResourcesView: View {
                         .font(.system(size: 25.0))}
                 } header: {
                     Text("SwiftUI")
+                }.listRowBackground(Rectangle().foregroundColor(.pink))
+            }.background(Color.mint.ignoresSafeArea())
+                .onAppear {
+                    // Set the default to clear
+                    UITableView.appearance().backgroundColor = .clear
                 }
-            }
         }.navigationBarTitle("Resources")
+            
     }
 }
 
