@@ -9,7 +9,10 @@ import SwiftUI
 
 struct TeacherContactView: View {
     var body: some View {
-        Text("Teacher Contact") 
+        ZStack {
+            Color.mint
+                .ignoresSafeArea()
+        }.navigationBarTitle("Teacher Contact")
     }
 }
 
