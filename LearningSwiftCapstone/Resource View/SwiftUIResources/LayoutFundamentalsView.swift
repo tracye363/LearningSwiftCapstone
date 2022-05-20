@@ -9,7 +9,17 @@ import SwiftUI
 
 struct LayoutFundamentalsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.mint
+                .ignoresSafeArea()
+            VStack {
+                YoutubeView(youtubeID: "fdAz9IFbpqY")
+                    .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.3)
+                .cornerRadius(10)
+            }
+            .padding(10.0)
+            Spacer()
+        }.navigationBarTitle("Layout Fundamentals")
     }
 }
 

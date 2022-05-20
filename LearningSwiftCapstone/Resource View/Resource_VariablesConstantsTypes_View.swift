@@ -9,11 +9,13 @@ import SwiftUI
 
 struct Resource_VariablesConstantsTypes_View: View {
     var body: some View {
-        VStack {
+        ZStack {
+            Color.mint
+                .ignoresSafeArea()
             VStack {
                 YoutubeView(youtubeID: "F3XHtViALPw")
                     .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.3)
-                .cornerRadius(10)
+                    .cornerRadius(10)
             }
             .padding(10.0)
             Spacer()

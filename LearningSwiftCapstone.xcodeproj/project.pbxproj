@@ -15,6 +15,10 @@
 		97279571283001DE005FECDA /* Resource_Loops_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97279570283001DE005FECDA /* Resource_Loops_View.swift */; };
 		97E1434C2835C967001BBB0C /* LayoutFundamentalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E1434B2835C967001BBB0C /* LayoutFundamentalsView.swift */; };
 		97F78AF9283713E700A0AD0E /* YouTubeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F78AF8283713E700A0AD0E /* YouTubeVideo.swift */; };
+		97F78AFB28374AF400A0AD0E /* ImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F78AFA28374AF400A0AD0E /* ImagesView.swift */; };
+		97F78AFD28374DA100A0AD0E /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F78AFC28374DA100A0AD0E /* ButtonsView.swift */; };
+		97F78AFF28374E1900A0AD0E /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F78AFE28374E1900A0AD0E /* StateView.swift */; };
+		97F78B0128374E5100A0AD0E /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F78B0028374E5100A0AD0E /* BindingView.swift */; };
 		E31CA1D12833DBA300CD3E65 /* GradeViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31CA1D02833DBA300CD3E65 /* GradeViewNew.swift */; };
 		E32302FA2826CC5F00BC2739 /* LearningSwiftCapstoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32302F92826CC5F00BC2739 /* LearningSwiftCapstoneApp.swift */; };
 		E32302FC2826CC5F00BC2739 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32302FB2826CC5F00BC2739 /* ContentView.swift */; };
@@ -35,6 +39,10 @@
 		97279570283001DE005FECDA /* Resource_Loops_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource_Loops_View.swift; sourceTree = "<group>"; };
 		97E1434B2835C967001BBB0C /* LayoutFundamentalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutFundamentalsView.swift; path = SwiftUIResources/LayoutFundamentalsView.swift; sourceTree = "<group>"; };
 		97F78AF8283713E700A0AD0E /* YouTubeVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideo.swift; sourceTree = "<group>"; };
+		97F78AFA28374AF400A0AD0E /* ImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesView.swift; sourceTree = "<group>"; };
+		97F78AFC28374DA100A0AD0E /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		97F78AFE28374E1900A0AD0E /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		97F78B0028374E5100A0AD0E /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
 		E31CA1D02833DBA300CD3E65 /* GradeViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeViewNew.swift; sourceTree = "<group>"; };
 		E32302F62826CC5F00BC2739 /* LearningSwiftCapstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwiftCapstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32302F92826CC5F00BC2739 /* LearningSwiftCapstoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSwiftCapstoneApp.swift; sourceTree = "<group>"; };
@@ -69,6 +77,10 @@
 				970FAB4228300A7300B1C7A7 /* Resource_Arrays_View.swift */,
 				97E1434B2835C967001BBB0C /* LayoutFundamentalsView.swift */,
 				97F78AF8283713E700A0AD0E /* YouTubeVideo.swift */,
+				97F78AFA28374AF400A0AD0E /* ImagesView.swift */,
+				97F78AFC28374DA100A0AD0E /* ButtonsView.swift */,
+				97F78AFE28374E1900A0AD0E /* StateView.swift */,
+				97F78B0028374E5100A0AD0E /* BindingView.swift */,
 			);
 			path = "Resource View";
 			sourceTree = "<group>";
@@ -185,17 +197,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				E35F293C2832C5E0008B5F80 /* NotesView.swift in Sources */,
+				97F78B0128374E5100A0AD0E /* BindingView.swift in Sources */,
 				97F78AF9283713E700A0AD0E /* YouTubeVideo.swift in Sources */,
 				970FAB4328300A7300B1C7A7 /* Resource_Arrays_View.swift in Sources */,
 				97E1434C2835C967001BBB0C /* LayoutFundamentalsView.swift in Sources */,
 				9727956D28300145005FECDA /* Resource_OperatorsAndBoolean_View.swift in Sources */,
 				9727956F283001AA005FECDA /* Resource_ControlFlow_View.swift in Sources */,
+				97F78AFF28374E1900A0AD0E /* StateView.swift in Sources */,
 				E323030E282C360500BC2739 /* ResourcesView.swift in Sources */,
 				E31CA1D12833DBA300CD3E65 /* GradeViewNew.swift in Sources */,
 				E32302FC2826CC5F00BC2739 /* ContentView.swift in Sources */,
+				97F78AFD28374DA100A0AD0E /* ButtonsView.swift in Sources */,
 				9727956B283000D1005FECDA /* Resource_VariablesConstantsTypes_View.swift in Sources */,
 				970FAB3F28300A2600B1C7A7 /* Resource_Functions_View.swift in Sources */,
 				E3230308282C345500BC2739 /* TeacherContactView.swift in Sources */,
+				97F78AFB28374AF400A0AD0E /* ImagesView.swift in Sources */,
 				E323030A282C359E00BC2739 /* CalendarView.swift in Sources */,
 				97279571283001DE005FECDA /* Resource_Loops_View.swift in Sources */,
 				E32302FA2826CC5F00BC2739 /* LearningSwiftCapstoneApp.swift in Sources */,

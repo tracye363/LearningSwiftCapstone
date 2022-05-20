@@ -1,30 +1,30 @@
 //
-//  Resource_Arrays_View.swift
+//  ButtonsView.swift
 //  LearningSwiftCapstone
 //
-//  Created by Julian Bautista on 5/14/22.
+//  Created by Julian Bautista on 5/19/22.
 //
 
 import SwiftUI
 
-struct Resource_Arrays_View: View {
+struct ButtonsView: View {
     var body: some View {
         ZStack {
             Color.mint
                 .ignoresSafeArea()
             VStack {
-                YoutubeView(youtubeID: "QYz159iqsgY")
+                YoutubeView(youtubeID: "-SujycgHwPs")
                     .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.3)
                 .cornerRadius(10)
             }
             .padding(10.0)
             Spacer()
-        }.navigationBarTitle("Arrays")
+        }.navigationBarTitle("Buttons")
     }
 }
 
-struct Resource_Arrays_View_Previews: PreviewProvider {
+struct ButtonsView_Previews: PreviewProvider {
     static var previews: some View {
-        Resource_Arrays_View()
+        ButtonsView()
     }
 }

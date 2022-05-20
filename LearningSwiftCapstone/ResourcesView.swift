@@ -10,7 +10,9 @@ import SwiftUI
 struct ResourcesView: View {
     //TestLine
     var body: some View {
-        VStack {
+        ZStack {
+            Color.mint
+                .ignoresSafeArea()
             List {
                 Section {
                     NavigationLink(destination: Resource_VariablesConstantsTypes_View())

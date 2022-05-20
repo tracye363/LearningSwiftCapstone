@@ -1,30 +1,30 @@
 //
-//  Resource_Arrays_View.swift
+//  StateView.swift
 //  LearningSwiftCapstone
 //
-//  Created by Julian Bautista on 5/14/22.
+//  Created by Julian Bautista on 5/19/22.
 //
 
 import SwiftUI
 
-struct Resource_Arrays_View: View {
+struct StateView: View {
     var body: some View {
         ZStack {
             Color.mint
                 .ignoresSafeArea()
             VStack {
-                YoutubeView(youtubeID: "QYz159iqsgY")
+                YoutubeView(youtubeID: "XiftJb08wjg")
                     .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.3)
                 .cornerRadius(10)
             }
             .padding(10.0)
             Spacer()
-        }.navigationBarTitle("Arrays")
+        }.navigationBarTitle("@State")
     }
 }
 
-struct Resource_Arrays_View_Previews: PreviewProvider {
+struct StateView_Previews: PreviewProvider {
     static var previews: some View {
-        Resource_Arrays_View()
+        StateView()
     }
 }

@@ -9,13 +9,9 @@ import SwiftUI
 
 struct Resource_ControlFlow_View: View {
     var body: some View {
-        VStack {
-            Text("Control Flow")
-                .fontWeight(.bold)
-                .font(.system(size: 30.0))
-                .padding(.horizontal, 15.0)
-                .border(Color.blue, width: 4)
-                .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.mint
+                .ignoresSafeArea()
             VStack {
                 YoutubeView(youtubeID: "_AERwj9vlOM")
                     .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.3)
@@ -23,7 +19,7 @@ struct Resource_ControlFlow_View: View {
             }
             .padding(10.0)
             Spacer()
-        }
+        }.navigationBarTitle("Control Flow")
     }
 }
 
