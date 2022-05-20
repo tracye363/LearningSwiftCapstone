@@ -9,16 +9,15 @@ import SwiftUI
 
 struct Resource_VariablesConstantsTypes_View: View {
     var body: some View {
-        
         VStack {
-            Text("Variables and Constants")
-                .fontWeight(.bold)
-                .font(.system(size: 30.0))
-                .padding(.horizontal, 15.0)
-                .border(Color.blue, width: 4)
-                .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
+            VStack {
+                YoutubeView(youtubeID: "F3XHtViALPw")
+                    .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.3)
+                .cornerRadius(10)
+            }
+            .padding(10.0)
             Spacer()
-        }
+        }.navigationBarTitle("Variables and Constants")
     }
 }
 

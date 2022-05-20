@@ -9,7 +9,21 @@ import SwiftUI
 
 struct Resource_Loops_View: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Control Flow")
+                .fontWeight(.bold)
+                .font(.system(size: 30.0))
+                .padding(.horizontal, 15.0)
+                .border(Color.blue, width: 4)
+                .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
+            VStack {
+                YoutubeView(youtubeID: "qeZJ4y4W4r0")
+                    .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.3)
+                .cornerRadius(10)
+            }
+            .padding(10.0)
+            Spacer()
+        }
     }
 }
 

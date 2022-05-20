@@ -64,8 +64,7 @@ struct ResourcesView: View {
                     Text("SwiftUI")
                 }
             }
-        }
-        .navigationBarTitle("Resources")
+        }.navigationBarTitle("Resources")
     }
 }
 

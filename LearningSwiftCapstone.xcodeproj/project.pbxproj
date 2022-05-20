@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		970FAB3F28300A2600B1C7A7 /* Resource_Functions_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970FAB3E28300A2600B1C7A7 /* Resource_Functions_View.swift */; };
 		970FAB4328300A7300B1C7A7 /* Resource_Arrays_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970FAB4228300A7300B1C7A7 /* Resource_Arrays_View.swift */; };
-		970FAB4528300AA500B1C7A7 /* Resource_Optionals_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970FAB4428300AA500B1C7A7 /* Resource_Optionals_View.swift */; };
 		9727956B283000D1005FECDA /* Resource_VariablesConstantsTypes_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727956A283000D1005FECDA /* Resource_VariablesConstantsTypes_View.swift */; };
 		9727956D28300145005FECDA /* Resource_OperatorsAndBoolean_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727956C28300145005FECDA /* Resource_OperatorsAndBoolean_View.swift */; };
 		9727956F283001AA005FECDA /* Resource_ControlFlow_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727956E283001AA005FECDA /* Resource_ControlFlow_View.swift */; };
@@ -30,7 +29,6 @@
 /* Begin PBXFileReference section */
 		970FAB3E28300A2600B1C7A7 /* Resource_Functions_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource_Functions_View.swift; sourceTree = "<group>"; };
 		970FAB4228300A7300B1C7A7 /* Resource_Arrays_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource_Arrays_View.swift; sourceTree = "<group>"; };
-		970FAB4428300AA500B1C7A7 /* Resource_Optionals_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource_Optionals_View.swift; sourceTree = "<group>"; };
 		9727956A283000D1005FECDA /* Resource_VariablesConstantsTypes_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource_VariablesConstantsTypes_View.swift; sourceTree = "<group>"; };
 		9727956C28300145005FECDA /* Resource_OperatorsAndBoolean_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource_OperatorsAndBoolean_View.swift; sourceTree = "<group>"; };
 		9727956E283001AA005FECDA /* Resource_ControlFlow_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource_ControlFlow_View.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 				97279570283001DE005FECDA /* Resource_Loops_View.swift */,
 				970FAB3E28300A2600B1C7A7 /* Resource_Functions_View.swift */,
 				970FAB4228300A7300B1C7A7 /* Resource_Arrays_View.swift */,
-				970FAB4428300AA500B1C7A7 /* Resource_Optionals_View.swift */,
 				97E1434B2835C967001BBB0C /* LayoutFundamentalsView.swift */,
 				97F78AF8283713E700A0AD0E /* YouTubeVideo.swift */,
 			);
@@ -193,7 +190,6 @@
 				97E1434C2835C967001BBB0C /* LayoutFundamentalsView.swift in Sources */,
 				9727956D28300145005FECDA /* Resource_OperatorsAndBoolean_View.swift in Sources */,
 				9727956F283001AA005FECDA /* Resource_ControlFlow_View.swift in Sources */,
-				970FAB4528300AA500B1C7A7 /* Resource_Optionals_View.swift in Sources */,
 				E323030E282C360500BC2739 /* ResourcesView.swift in Sources */,
 				E31CA1D12833DBA300CD3E65 /* GradeViewNew.swift in Sources */,
 				E32302FC2826CC5F00BC2739 /* ContentView.swift in Sources */,
