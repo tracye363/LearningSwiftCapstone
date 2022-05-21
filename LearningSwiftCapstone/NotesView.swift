@@ -27,11 +27,19 @@ struct NotesView: View {
             VStack(alignment: .leading) {
                     List{
                         Text("\(notes)")
+                            .listRowBackground(Rectangle().foregroundColor(Color(red: 0.98, green: 0.5, blue: 0.446))
+                                .ignoresSafeArea())
                         Text("")
+                            .listRowBackground(Rectangle().foregroundColor(Color(red: 0.98, green: 0.5, blue: 0.446))
+                                .ignoresSafeArea())
                         Text("")
+                            .listRowBackground(Rectangle().foregroundColor(Color(red: 0.98, green: 0.5, blue: 0.446))
+                                .ignoresSafeArea())
                     }
+                
                     .navigationBarTitle("Notes")
                         Spacer()
+                    
                    
             }
         }
