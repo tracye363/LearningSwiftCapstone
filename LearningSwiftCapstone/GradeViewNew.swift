@@ -39,7 +39,7 @@ struct GradeViewNew: View {
     var body: some View {
         ZStack {
             Rectangle()
-                Color.mint
+                .foregroundColor(Color(red: 0.635, green: 0.893, blue: 0.72))
                 .ignoresSafeArea()
             VStack {
                 HStack {

@@ -15,8 +15,15 @@ struct NotesView: View {
         
         ZStack {
             Rectangle()
-                Color.mint
+                .foregroundColor(Color(red: 0.635, green: 0.893, blue: 0.72))
                 .ignoresSafeArea()
+            .background((Color(red: 0.635, green: 0.893, blue: 0.72))
+                .ignoresSafeArea())
+                .onAppear {
+                    // Set the default to clear
+                    UITableView.appearance().backgroundColor = .clear
+                }
+            
             VStack(alignment: .leading) {
                     List{
                         Text("\(notes)")

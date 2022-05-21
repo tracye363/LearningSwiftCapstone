@@ -10,7 +10,8 @@ import SwiftUI
 struct ImagesView: View {
     var body: some View {
         ZStack {
-            Color.mint
+            Rectangle()
+                .foregroundColor(Color(red: 0.635, green: 0.893, blue: 0.72))
                 .ignoresSafeArea()
             VStack {
                 YoutubeView(youtubeID: "leGCnjdlgmo")

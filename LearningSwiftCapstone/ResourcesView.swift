@@ -11,7 +11,8 @@ struct ResourcesView: View {
     //TestLine
     var body: some View {
         ZStack {
-            Color.mint
+            Rectangle()
+                .foregroundColor(Color(red: 0.635, green: 0.893, blue: 0.72))
                 .ignoresSafeArea()
             List {
                 Section {
@@ -40,7 +41,8 @@ struct ResourcesView: View {
                         .font(.system(size: 25.0))}
                 } header: {
                     Text("Swift")
-                }.listRowBackground(Rectangle().foregroundColor(.pink))
+                }.listRowBackground(Rectangle().foregroundColor(Color(red: 0.98, green: 0.5, blue: 0.446))
+                    .ignoresSafeArea())
                 
                 
                 Section {
@@ -65,8 +67,10 @@ struct ResourcesView: View {
                         .font(.system(size: 25.0))}
                 } header: {
                     Text("SwiftUI")
-                }.listRowBackground(Rectangle().foregroundColor(.pink))
-            }.background(Color.mint.ignoresSafeArea())
+                }.listRowBackground(Rectangle().foregroundColor(Color(red: 0.98, green: 0.5, blue: 0.446))
+                    .ignoresSafeArea())
+            }.background((Color(red: 0.635, green: 0.893, blue: 0.72))
+                .ignoresSafeArea())
                 .onAppear {
                     // Set the default to clear
                     UITableView.appearance().backgroundColor = .clear
