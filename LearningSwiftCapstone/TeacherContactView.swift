@@ -26,6 +26,7 @@ struct TeacherContactView: View {
                 }
                 Text("Schedule")
                     .font(.title)
+                    .padding(.top)
                 VStack {
                     HStack {
                         VStack {
@@ -85,8 +86,8 @@ struct TeacherContactView: View {
                             Text("plan")
                         }
                         .padding(15.0)
-                        
                     }
+                    Spacer()
                 }
             }
             .padding(25.0)
