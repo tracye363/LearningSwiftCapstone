@@ -15,65 +15,79 @@ struct TeacherContactView: View {
             VStack {
                 VStack {
                     HStack {
-                        Text("Name: ")
+                        Text("Name: Kevin McQuown")
                         Spacer()
                     }
                     
                     HStack {
-                        Text("Email: ")
+                        Text("Email: Use Slack")
                         Spacer()
                     }
                 }
-                Spacer()
                 Text("Schedule")
                     .font(.title)
                 VStack {
-                    Spacer()
                     HStack {
                         VStack {
                             Text("Period")
                                 .font(.title2)
+                                .padding(.bottom, 5.0)
                             Text("1st")
+                                .padding(.bottom, 5.0)
                             Text("2nd")
+                                .padding(.bottom, 5.0)
                             Text("3rd")
+                                .padding(.bottom, 5.0)
                             Text("4th")
+                                .padding(.bottom, 5.0)
                             Text("5th")
+                                .padding(.bottom, 5.0)
                             Text("6th")
+                                .padding(.bottom, 5.0)
                             Text("7th")
                         }
-                        Spacer()
-                        Divider()
-                        Spacer()
+                        .padding(15.0)
                         VStack {
                             Text("Location")
                                 .font(.title2)
+                                .padding(.bottom, 5.0)
                             Text("200")
+                                .padding(.bottom, 5.0)
                             Text("200")
+                                .padding(.bottom, 5.0)
                             Text("205")
+                                .padding(.bottom, 5.0)
                             Text("153")
+                                .padding(.bottom, 5.0)
                             Text("204")
+                                .padding(.bottom, 5.0)
                             Text("202")
+                                .padding(.bottom, 5.0)
                             Text("204")
                         }
-                        Spacer()
-                        Divider()
-                        Spacer()
+                        .padding(15.0)
                         VStack {
                             Text("Subject")
                                 .font(.title2)
+                                .padding(.bottom, 5.0)
                             Text("algebra")
+                                .padding(.bottom, 5.0)
                             Text("algebra")
+                                .padding(.bottom, 5.0)
                             Text("ecs")
+                                .padding(.bottom, 5.0)
                             Text("geo")
+                                .padding(.bottom, 5.0)
                             Text("plan")
+                                .padding(.bottom, 5.0)
                             Text("algebra")
+                                .padding(.bottom, 5.0)
                             Text("plan")
                         }
+                        .padding(15.0)
                         
                     }
-                    
                 }
-                
             }
             .padding(25.0)
         }.navigationBarTitle("Teacher Contact")
